@@ -3,6 +3,8 @@ class Word
 
   define_method(:initialize) do |name|
     @name = name
+    @id = @@words.length + 1
+    @definitions = []
   end
 
   define_method(:name) do
@@ -19,5 +21,23 @@ class Word
 
   define_method(:save) do
     @@words.push(self)
+  end
+
+  define_method(:id) do
+    @id
+  end
+
+  define_singleton_method(:find) do |id|
+    found_word = nil
+    @@words.each() do |word|
+      if word.id.eql?(id)
+        found_word = word
+      end
+    end
+    found_word
+  end
+
+  define_method(:add_definition) do |definition|
+    @definitions.push(definition)
   end
 end

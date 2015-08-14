@@ -1,5 +1,5 @@
 # dictionary
-
+https://thawing-shore-3097.herokuapp.com/
 ##### user can list words and definitions for them, 8/14/15
 
 #### By Jake Glassman
@@ -14,6 +14,7 @@ User is asked to enter new words. User can add multiple definitions for differen
 * install Ruby and Sinatra gem
 * Enter 'ruby app.rb' in command line
 * Enter localhost:4567 in browser URL
+
 
 ## Technologies Used
 Ruby and Sinatra

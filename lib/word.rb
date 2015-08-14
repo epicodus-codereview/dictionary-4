@@ -7,6 +7,10 @@ class Word
     @definitions = []
   end
 
+  define_method(:definitions) do
+    @definitions
+  end
+
   define_method(:name) do
     @name
   end

@@ -22,8 +22,14 @@ get('/word/:id') do
 end
 
 post('/word/:id') do
-  @definition = params.fetch('definition')
+  @definition = params.fetch('definition').capitalize!()
   @word = Word.find(params.fetch('word_id').to_i())
   @word.add_definition(@definition)
   erb(:word)
+end
+
+get('/clear') do
+  Word.clear()
+  @words = Word.all()
+  erb(:index)
 end

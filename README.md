@@ -1,7 +1,6 @@
 # dictionary
-https://thawing-shore-3097.herokuapp.com/
 ##### user can list words and definitions for them, 8/14/15
-
+https://sleepy-dawn-3244.herokuapp.com/
 #### By Jake Glassman
 
 ## Description
